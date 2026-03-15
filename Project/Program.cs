@@ -11,5 +11,20 @@
             return sum / values.Length;
         }
 
+        public int CalculateMax(int[] values)
+        {
+            if (values == null || values.Length == 0)
+                return int.MinValue;
+
+            int max = int.MinValue;
+
+            for(int i = 0; i < values.Length; i++)
+            {
+                if(max < values[i])
+                    max = values[i];
+            }
+
+            return max;
+        }
     }
 }
