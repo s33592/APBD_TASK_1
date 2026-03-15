@@ -31,6 +31,9 @@
         }
 
         public int CalculateMin(int[] values) {
+            if(values == null || values.Length == 0)
+                return int.MaxValue;
+
             int min = int.MaxValue;
 
             for (int i = 0; i < values.Length; i++) {
