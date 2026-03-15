@@ -4,7 +4,7 @@
         public double CalculateAverage(int[] values)
         {
             if (values == null || values.Length == 0)
-                return double.NaN;
+                throw new ArgumentException("The input argument should be a non-null, non-empty integer array");
 
             double sum = 0.0;
 
@@ -17,7 +17,7 @@
         public int CalculateMax(int[] values)
         {
             if (values == null || values.Length == 0)
-                return int.MinValue;
+                throw new ArgumentException("The input argument should be a non-null, non-empty integer array");
 
             int max = int.MinValue;
 
@@ -31,8 +31,8 @@
         }
 
         public int CalculateMin(int[] values) {
-            if(values == null || values.Length == 0)
-                return int.MaxValue;
+            if (values == null || values.Length == 0)
+                throw new ArgumentException("The input argument should be a non-null, non-empty integer array");
 
             int min = int.MaxValue;
 
