@@ -12,4 +12,8 @@ array of integer values.
 The function enables the user to find the maximum value in an array 
 of integer values
 
+# CalculateMin(int[] values)
+
+The function enables the user to find the minimum value in an array
+of integer values 
 
