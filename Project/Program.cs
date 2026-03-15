@@ -4,7 +4,7 @@
         public double CalculateAverage(int[] values)
         {
             if (values == null || values.Length == 0)
-                return double.NaN;
+                throw new Exception("Invalid input parameter");
 
             double sum = 0.0;
 
@@ -17,7 +17,7 @@
         public int CalculateMax(int[] values)
         {
             if (values == null || values.Length == 0)
-                return int.MinValue;
+                throw new Exception("Invalid input parameter");
 
             int max = int.MinValue;
 
@@ -31,8 +31,8 @@
         }
 
         public int CalculateMin(int[] values) {
-            if(values == null || values.Length == 0)
-                return int.MaxValue;
+            if (values == null || values.Length == 0)
+                throw new Exception("Invalid input parameter");
 
             int min = int.MaxValue;
 
